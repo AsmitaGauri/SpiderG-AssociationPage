@@ -12,7 +12,7 @@ var usersRouter = require('./routes/users');
 //Database
 var mongoose=require('mongoose');
 var Users=require('./models/users');
-const url='mongodb://localhost:27017/associationUserData';
+const url='mongodb://spiderg_assc:spiderg_assc@localhost:27017/associationUserData';
 var connect=mongoose.connect(url);
 
 connect.then((db)=>{
