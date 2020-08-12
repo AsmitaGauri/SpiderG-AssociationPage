@@ -1,0 +1,600 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Association name</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../../websiteImages/favicon.png" rel="icon">
+  <link href="../../websiteImages/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="../../vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../../vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="../../vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../../vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="../../vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../../stylesheets/association.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex">
+      <div class="contact-info mr-auto">
+        <i class="icofont-phone"></i><%= user.Phone%>
+        <!--span class="d-none d-lg-inline-block"><i class="icofont-clock-time icofont-rotate-180"></i> Mon-Sat: 11:00 AM - 23:00 PM</span-->
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="index.html"><span><img src="../../websiteImages/favicon.png"></span><span> <%= user.Associationname%> </span></a></h1>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+            <li><a href="#highlights">Highlights</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#partners">Partners</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-left" data-aos="zoom-in" data-aos-delay="100">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1>Welcome to <span style="color: white"><%= user.Associationname%> <%= user.AssociationType%> ASSOCIATION <%= user.address%></span></h1>
+          <h2>Use this page to stay updated</h2>
+
+          <div class="btns">
+            <a href="#about" class="btn-menu animated fadeInUp scrollto" style="color: white; background-color: #6633CC">GET STARTED</a>
+            <!--a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Book a Table</a-->
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex align-items-center justify-content-center" data-aos="zoom-in" data-aos-delay="200">
+          <a href="https://www.youtube.com/embed/2I1tkmC_YI4" class="venobox play-btn" data-vbtype="video" data-autoplay="true"></a>
+        </div>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="about-img">
+                <!-- ========================================== -->
+              <img src="../../images/<%= user.DescImg%>" alt="" style="height: 390px; width: 520px;">
+              <!-- ===================================== -->
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <div class="section-title">
+          <h2>About Us</h2>
+          <p>About Us</p>
+        </div>
+              <h3><%=user.DescHeading%></h3>
+            <p class="font-italic">
+              <%= user.desc%>
+            </p>
+            <!-- <ul>
+              <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+            </ul>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum
+            </p> -->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= highlights Section ======= -->
+    <section id="highlights" class="highlight">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Highlights</h2>
+          <p>Here are some highlights.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="box" data-aos="zoom-in" data-aos-delay="100">
+              <span>01</span>
+              <h4>Number of Members</h4>
+                <p>The total number of memebers in the association </p>
+              <h1><%=user.activeMembers%>+</h1>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="200">
+              <span>02</span>
+              <h4>Total Events contucted</h4>
+                <p>The number of events conducted by the Association for the welfare of members</p>
+              <h1><%=user.totalEvents%></h1>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="300">
+              <span>03</span>
+              <h4>Upcoming Events</h4>
+              <p>We are planning on conducting the following number of events in future.</p>
+                <h1>00</h1>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+
+
+
+    <!-- ======= Events Section ======= -->
+    <section id="events" class="events">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Events</h2>
+          <p>List Of Upcoming Events</p>
+        </div>
+
+        <div class="owl-carousel events-carousel" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="row event-item">
+            <div class="col-lg-6">
+              <img src="../../websiteImages/favicon.png" class=img-fluid alt="" style="opacity: 0.8;"> 
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content">
+              <h3>Upcoming Event title</h3>
+              <div class="price">
+                <p><span>Upcoming Event Description</span></p>
+              </div>
+              <p class="font-italic">
+               Upcoming Event Description
+              </p>
+              <ul>
+                <li><i class="icofont-check-circled"></i> Point 1.</li>
+                <li><i class="icofont-check-circled"></i> Point 2.</li>
+                <li><i class="icofont-check-circled"></i> Point 3.</li>
+              </ul>
+              <!-- <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur
+              </p> -->
+            </div>
+          </div>
+
+          <div class="row event-item">
+            <div class="col-lg-6">
+              <img src="../../websiteImages/favicon.png" class="img-fluid" alt="" style="opacity: 0.8;">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content">
+              <h3> Upcoming Event title</h3>
+              <div class="price">
+                <p><span>Upcoming Event Description</span></p>
+              </div>
+              <p class="font-italic">
+                Upcoming Event Description
+              </p>
+              <ul>
+                <li><i class="icofont-check-circled"></i> Point 1.</li>
+                <li><i class="icofont-check-circled"></i> Point 2.</li>
+                <li><i class="icofont-check-circled"></i> Point 3.</li>
+              </ul>
+              <!-- <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur
+              </p> -->
+            </div>
+          </div>
+
+          <div class="row event-item">
+            <div class="col-lg-6">
+              <img src="../../websiteImages/favicon.png" class="img-fluid" alt="" style="opacity: 0.8;">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content">
+              <h3>Upcoming Event title</h3>
+              <div class="price">
+                <p><span>Upcoming Event Description</span></p>
+              </div>
+              <p class="font-italic">
+               Upcoming Event Description
+              </p>
+              <ul>
+                <li><i class="icofont-check-circled"></i> Point 1.</li>
+                <li><i class="icofont-check-circled"></i> Point 2.</li>
+                <li><i class="icofont-check-circled"></i> Point 3.</li>
+              </ul>
+              <!-- <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur
+              </p> -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Events Section -->
+
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Gallery</h2>
+          <p>Some photos from Our Association and the photos of Events we have conducted</p>
+        </div>
+      </div>
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-4 mb-4" style="text-align: center;">
+            <div class="gallery-item">
+              <a href="../../images/<%= user.galleryImag[0].filename%>" class="venobox" data-gall="gallery-item">
+                <img src="../../images/<%= user.galleryImag[0].filename%>" alt="" class="img-fluid" style="height: 250px; width: 300px;">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 mb-4" style="text-align: center;">
+            <div class="gallery-item">
+              
+              <a href="../../images/<%= user.galleryImag[1].filename%>" class="venobox" data-gall="gallery-item">
+                <img src="../../images/<%= user.galleryImag[1].filename%>" alt="" class="img-fluid" style="height: 250px; width: 300px;">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 mb-4" style="text-align: center;">
+            <div class="gallery-item">
+              <% if(typeof user.galleryImag[2]=="undefined") {%>
+               
+              <a href="../../images/default-gallery.png" class="venobox" data-gall="gallery-item">
+                <img src="../../images/default.png" alt="" class="img-fluid">
+              <% } else{  %>
+                <a href="../../images/<%= user.galleryImag[2].filename%>" class="venobox" data-gall="gallery-item">
+                  <img src="../../images/<%= user.galleryImag[2].filename%>" alt="" class="img-fluid" style="height: 250px; width: 300px;">
+              <% } %>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 mb-4" style="text-align: center;">
+            <div class="gallery-item">
+              <% if(typeof user.galleryImag[3]=="undefined") {%>
+               
+                <a href="../../images/default.png" class="venobox" data-gall="gallery-item">
+                  <img src="../../images/default.png" alt="" class="img-fluid">
+                <% } else{  %>
+                  <a href="../../images/<%= user.galleryImag[3].filename%>" class="venobox" data-gall="gallery-item">
+                    <img src="../../images/<%= user.galleryImag[3].filename%>" alt="" class="img-fluid" style="height: 250px; width: 300px;">
+                <% } %>
+              </a>
+            </div>
+          </div>
+
+          
+
+
+        </div>
+        <!-- 2nd Row of Images -->
+        
+        <div class="row no-gutters">
+
+        <div class="col-lg-3 col-md-4 mb-4" style="text-align: center;">
+          <div class="gallery-item">
+            <% if(typeof user.galleryImag[4]=="undefined") {%>
+             
+              <a href="../../images/default.png" class="venobox" data-gall="gallery-item">
+                <img src="../../images/default.png" alt="" class="img-fluid">
+              <% } else{  %>
+                <a href="../../images/<%= user.galleryImag[4].filename%>" class="venobox" data-gall="gallery-item">
+                  <img src="../../images/<%= user.galleryImag[4].filename%>" alt="" class="img-fluid" style="height: 250px; width: 300px;">
+              <% } %>
+            </a>
+          </div>
+        </div>
+
+          <div class="col-lg-3 col-md-4 mb-4" style="text-align: center;">
+            <div class="gallery-item">
+              <% if(typeof user.galleryImag[5]=="undefined") {%>
+               
+                <a href="../../images/default.png" class="venobox" data-gall="gallery-item">
+                  <img src="../../images/default.png" alt="" class="img-fluid">
+                <% } else{  %>
+                  <a href="../../images/<%= user.galleryImag[5].filename%>" class="venobox" data-gall="gallery-item">
+                    <img src="../../images/<%= user.galleryImag[5].filename%>" alt="" class="img-fluid" style="height: 250px; width: 300px;">
+                <% } %>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 mb-4" style="text-align: center;">
+            <div class="gallery-item">
+              <% if(typeof user.galleryImag[6]=="undefined") {%>
+               
+              <a href="../../images/default-gallery-new.png" class="venobox" data-gall="gallery-item">
+                <img src="../../images/default-gallery-new.png" alt="" class="img-fluid">
+              <% } else{  %>
+                <a href="../../images/<%= user.galleryImag[6].filename%>" class="venobox" data-gall="gallery-item">
+                  <img src="../../images/<%= user.galleryImag[6].filename%>" alt="" class="img-fluid" style="height: 250px; width: 300px;">
+              <% } %>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 mb-4" style="text-align: center;">
+            <div class="gallery-item">
+              <% if(typeof user.galleryImag[7]=="undefined") {%>
+               
+                <a href="../../images/default-gallery-new.png" class="venobox" data-gall="gallery-item">
+                  <img src="../../images/default-gallery-new.png" alt="" class="img-fluid">
+                <% } else{  %>
+                  <a href="../../images/<%= user.galleryImag[7].filename%>" class="venobox" data-gall="gallery-item">
+                    <img src="../../images/<%= user.galleryImag[7].filename%>" alt="" class="img-fluid" style="height: 250px; width: 300px;">
+                <% } %>
+              </a>
+            </div>
+          </div>
+
+          
+
+
+        </div>
+
+
+      </div>
+    </section>
+      <!-- End Gallery Section -->
+
+    <!-- ======= Partners Section ======= -->
+    <section id="partners" class="partners">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Partners</h2>
+          <p>Our Partners</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 mb-4" style="text-align: center;">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <img src="../../images/<%= user.P1Img%>" class="img-fluid" alt="" style="height: 300px; width: 350px;">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4><%= user.P1name%></h4>
+                  <span><%= user.P1Pos%></span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4" style="text-align: center;">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <img src="../../images/<%= user.P2Img%>" class="img-fluid" alt="" style="height: 300px; width: 350px;">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4><%= user.P2name%></h4>
+                  <span><%= user.P2pos%></span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4" style="text-align: center;">
+            <div class="member" data-aos="zoom-in" data-aos-delay="300">
+              <img src="../../images/<%= user.P3Img%>" class="img-fluid" alt="" style="height: 300px; width: 350px;">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4><%= user.P3name%></h4>
+                  <span><%=user.P3Pos%></span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Partners Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+      </div>
+
+      <div data-aos="fade-up">
+      </div>
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Location:</h4>
+                <p><%= user.address%>, <%= user.pin%></p>
+              </div>
+
+              <div class="open-hours">
+                <i class="icofont-clock-time icofont-rotate-90"></i>
+                <h4>Open Hours:</h4>
+                <p>
+                  <%=user.days%>:<br>
+                  <%= user.hrs%>
+                </p>
+              </div>
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p><%= user.email%></p>
+              </div>
+
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 <%= user.Phone%></p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="/users/<%= user._id%>/form-submit" method="post" role="form" class="php-email-form" name="contact-form">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="8" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit" onclick="submitForm()">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../../vendor/jquery/jquery.min.js"></script>
+  <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="../../vendor/php-email-form/validate.js"></script>
+  <script src="../../vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../../vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../../vendor/venobox/venobox.min.js"></script>
+  <script src="../../vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../../javascripts/main.js"></script>
+  
+  <script>
+  function submitForm() {
+  
+  $('form[name="contact-form"]').submit();
+  // $('form[name="contact-form"] input').val('').trigger("change");
+  $('input[type="text"], textarea').val(' ');
+  $('input[type="email"]').val(' ');
+
+   
+
+  // this.$validator.errors.clear()
+  // setTimeout(() => {$(this).attr('class',"needs-validation")},1);
+}
+  </script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

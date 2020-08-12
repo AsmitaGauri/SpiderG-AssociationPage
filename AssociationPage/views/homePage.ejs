@@ -1,0 +1,239 @@
+<html>
+<head>
+<title>form</title>
+<link rel="stylesheet" type="text/css" href="../stylesheets/homePage.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>ASSOCIATION REGISTRATION FORM</h1>
+  <form action="/users" method="POST" enctype="multipart/form-data">
+    <div class="row">
+        <h2>Details regarding Assocation</h2>
+      <div class="col-25">
+        <label for="Aname">Association Name</label>
+      </div>
+      <!-- association name -->
+      <div class="col-75">
+        <input type="text" id="Aname" name="Associationname" placeholder="Name of your association" required>
+      </div>
+      <!-- association name -->
+    </div>
+      <div class="row">
+      <div class="col-25">
+        <label for="AType">Assocation type</label>
+      </div>
+      <div class="col-75">
+        <select id="Atype" name="AssociationType" required>
+          <option value="MilkVendors">Milk Vendors</option>
+          <option value="TVOperators">TV Operators Association</option>
+          <option value="BusDrivers">Bus Drivers Association</option>
+            <option value="InternetOperators">Internet Operators</option>
+            <option value="NewspaperVendors">Newspaper Vendors</option>
+            <option value="TuitionClasses">Tution classes/Couching Institutes</option>
+            
+        </select>
+      </div>
+    </div>
+    <div class="row">
+        <h2>Description</h2>
+      <div class="col-25">
+        <label for="DescHeading">Heading</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="DescHeading" name="DescHeading" placeholder="Title of your Description" >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="desc">Description</label>
+      </div>
+      <div class="col-75">
+        <textarea id="desc" name="desc" placeholder="Write the Description of your Association." style="height:200px" required></textarea>
+      </div>
+    </div>
+      <div class="row">
+      <div class="col-25">
+        <label for="desc">Image for Description</label>
+      </div>
+      <div class="col-75">
+        <% if(typeof msg!="undefined"){ %>
+          <h4 style="color: red;">UPLOAD IMAGES ONLY</h4>
+            
+        <%}%>
+        <!-- <%=typeof msg!="undefined" ? 'Upload Images Only':''%> -->
+          <input type="file" name="DescImg" id="DescImg" required>
+      </div>
+    </div>
+      <div class="row">
+        <h2>Details of members and events</h2>
+      <div class="col-25">
+        <label for="Aname">Active members*</label>
+      </div>
+      <div class="col-75">
+        <input type="number" id="Aname" name="activeMembers" placeholder="Number of active memebers in association" required>
+      </div>
+      </div>
+        <div class="row">
+      <div class="col-25">
+        <label for="Aname">Number of events conducted</label>
+      </div>
+      <div class="col-75">
+        <input type="number" id="Aname" name="totalEvents" placeholder="Number of total events conducted by association" required>
+            </div></div>
+    <div class="row">
+        <h2>Photo Gallery</h2>
+    <article>
+      <div class="col-25">  
+          <label for="files">Select all photos at once: </label></div>
+        <div class="col-75">
+          <% if(typeof msg!="undefined"){ %>
+            <h4 style="color: red;">UPLOAD IMAGES ONLY</h4>
+          <%}%>
+            <input id="files" type="file" name="galleryImag" multiple / ></div>
+      <button type="button" id="clear">Clear</button>
+        <output id="result" />
+    </article>
+    </div>
+      <div class="row">
+           <h2>Details of Partners</h2>
+          <h4>Partner one:</h4>
+      <div class="col-25">
+        <label for="P1name">Partner Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="P1name" name="P1name" placeholder="Name of parnter" required>
+          </div>
+      </div>
+      <div class="row">
+      <div class="col-25">
+        <label for="P1Pos">Partner Position</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="P1Pos" name="P1Pos" placeholder="Position of parnter in the association" required>
+          </div>
+      </div>
+      <div class="row">
+      <div class="col-25">
+        <label for="P1Img">Image of parnter</label>
+      </div>
+      <div class="col-75">
+        <% if(typeof msg!="undefined"){ %>
+          <h4 style="color: red;">UPLOAD IMAGES ONLY</h4>
+        <%}%>
+          <input type="file" name="P1Img" id="P1Img" required>
+      </div>
+    </div>
+        <div class="row">
+          <h4>Partner two:</h4>
+      <div class="col-25">
+        <label for="P2name">Partner Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="P2name" name="P2name" placeholder="Name of parnter" >
+          </div>
+      </div>
+      <div class="row">
+      <div class="col-25">
+        <label for="P2Pos">Partner Position</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="P2Pos" name="P2Pos" placeholder="Position of parnter in the association">
+          </div>
+      </div>
+      <div class="row">
+      <div class="col-25">
+        <label for="P2Img">Image of parnter</label>
+      </div>
+      <div class="col-75">
+        <% if(typeof msg!="undefined"){ %>
+          <h4 style="color: red;">UPLOAD IMAGES ONLY</h4>
+        <%}%>
+          <input type="file" name="P2Img" id="P2Img">
+      </div>
+    </div>
+       <div class="row">
+          <h4>Partner three:</h4>
+      <div class="col-25">
+        <label for="P3name">Partner Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="P3name" name="P3name" placeholder="Name of parnter" >
+          </div>
+      </div>
+      <div class="row">
+      <div class="col-25">
+        <label for="P3Pos">Partner Position</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="P3Pos" name="P3Pos" placeholder="Position of parnter in the association">
+          </div>
+      </div>
+      <div class="row">
+      <div class="col-25">
+        <label for="P3Img">Image of parnter</label>
+      </div>
+      <div class="col-75">
+        <% if(typeof msg!="undefined"){ %>
+          <h4 style="color: red;">UPLOAD IMAGES ONLY</h4>
+        <%}%>
+          <input type="file" name="P3Img" id="P3Img">
+      </div>
+    </div>
+      <div class="row">
+          <h2>Contact Details</h2>
+      <div class="col-25">
+        <label for="address">Address</label>
+      </div>
+      <div class="col-37">
+        <input type="text" id="address" name="address" placeholder="Complete Address" required>
+       </div>
+       <!-- pin -->
+       <div class="col-10">
+        <label for="pin" style="margin-left: 30px;">Pin.</label>
+      </div>
+      <div class="col-30">
+        <input type="text" id="pin" name="pin" placeholder="Pin Number" required>
+       </div>
+      </div>
+     <div class="row">
+      <div class="col-25">
+        <label for="Phone">Phone Number</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="Phone" name="Phone" placeholder="Phone Number" required>
+          </div>
+      </div>
+      <div class="row">
+      <div class="col-25">
+        <label for="email">Email Address</label>
+      </div>
+      <div class="col-75">
+        <input type="email" id="email" name="email" placeholder="Email Address" required>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="days">Open Days</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="days" name="days" placeholder="Open Days (Ex: Monday,Thursday OR Monday-Saturday)" required>
+            </div>
+        </div>
+      <div class="row">
+      <div class="col-25">
+        <label for="hrs">Open hours</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="hrs" name="hrs" placeholder="Open Hours (Ex: 11:00 Am to 1:00 Pm)" required>
+          </div>
+      </div>
+     
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
