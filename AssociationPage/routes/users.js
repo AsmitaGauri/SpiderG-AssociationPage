@@ -151,7 +151,7 @@ userRouter.post('/',upload.fields([
     
     res.redirect('/users/'+user._id+"/"+user.Associationname);
   },(err)=> alert(err.message))
-  .catch((err)=> alert(err,message));
+  .catch((err)=> res.send("Some Error Ocurred Please Try Again"));
 
 });
 

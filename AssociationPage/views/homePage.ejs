@@ -41,7 +41,7 @@
         <label for="DescHeading">Heading</label>
       </div>
       <div class="col-75">
-        <input type="text" id="DescHeading" name="DescHeading" placeholder="Title of your Description" >
+        <input type="text" id="DescHeading" name="DescHeading" placeholder="Title of your Description" required>
       </div>
     </div>
     <div class="row">
@@ -90,7 +90,7 @@
           <% if(typeof msg!="undefined"){ %>
             <h4 style="color: red;">UPLOAD IMAGES ONLY</h4>
           <%}%>
-            <input id="files" type="file" name="galleryImag" multiple / ></div>
+            <input id="files" type="file" name="galleryImag" multiple / required></div>
       <button type="button" id="clear">Clear</button>
         <output id="result" />
     </article>
